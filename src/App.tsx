@@ -8,7 +8,7 @@ import { AddAddress, Menu } from './pages';
 const App = () => (
   <div>
     <Routes>
-      <Route element={<Menu />} path="/" />
+      <Route element={<Menu />} index path="/" />
       <Route element={<AddAddress />} path="/add-address" />
     </Routes>
   </div>
