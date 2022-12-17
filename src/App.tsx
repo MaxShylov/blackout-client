@@ -3,12 +3,12 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.module.scss';
 
-import { AddAddress } from './pages/AddAddress';
+import { AddAddress, Menu } from './pages';
 
 const App = () => (
   <div>
     <Routes>
-      <Route element={<AddAddress />} path="/menu" />
+      <Route element={<Menu />} path="/" />
       <Route element={<AddAddress />} path="/add-address" />
     </Routes>
   </div>

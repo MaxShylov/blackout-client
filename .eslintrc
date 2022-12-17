@@ -23,9 +23,12 @@
     "prettier"
   ],
   "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx"],
+        "extensions": [".ts", ".tsx"],
         "moduleDirectory": ["node_modules", "src/"]
       }
     }
@@ -47,6 +50,7 @@
     "sort-destructure-keys/sort-destructure-keys": "error",
     "sort-exports/sort-exports": "error",
 
+    "import/extensions": "off",
     "import/no-cycle": "warn",
     "import/prefer-default-export": "off",
     "import/order": [
